@@ -186,10 +186,15 @@ function gameOver() {
     result.textContent = `You scored: ${score}/110`;
     button.disabled = true;
     if (score <= 50) {
-        resultMessage.innerHTML = ``;
+        resultMessage.innerHTML = `Well done! <br>You're trying to know this GAME! <br><br> Press the Home button to give it another shot!`;
       } else if (score > 50 && score <= 90) {
-        resultMessage.innerHTML = ``;
+        resultMessage.innerHTML = `Going the right way. <br>Enjoy this beautiful GAME! <br><br>Press the Home button to give it another shot!`;
       } else if (score > 90 && score <= 110) {
-        resultMessage.innerHTML = ``
+        resultMessage.innerHTML = `A man takes his seat at the World Cup Final.<br>
+        He looks to his left and notices that there is a spare seat between himself and the next guy.
+        <br>The man: “Who would ever miss the World Cup final?”
+        <br>The guy: “That was my wife’s seat. We have been to the last five World Cup finals together, but sadly she passed away.”
+        <br>The man: “That’s terrible, but couldn’t you get another member of the family, friend, or someone else to come with you?”
+        <br>The guy: “No…they are all at the funeral!” <br><br>Don't be that guy :)))`;
 }
 }
