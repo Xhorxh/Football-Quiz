@@ -15,11 +15,11 @@
 </head>
 <body>
     <!-- Home button -->
-  <div id="header" class="hide">
-    <div>
-      <a class="home-btn" href="index.html">Home</a>
+    <div id="header" class="hide">
+        <div>
+         <a class="home-btn" href="index.html">Home</a>
+        </div>
     </div>
-  </div>
 
     <!-- Quiz Info -->
     <section id="welcome">
@@ -35,7 +35,31 @@
           </div>
           <button id="startQuiz" type="button" class="start-btn"></button>
         </div>
-      </section>
+    </section>
+    
+    <!-- Play area -->
+    <section id="quizContainer" class="hide">
+        <div class="container">
+          <div>
+            <h1 id="question">Quiz questions</h1>
+          </div>
+          <div id="options">
+            <button class="btn" id="A" onclick="checkAnswer('A')"></button>
+            <button class="btn" id="B" onclick="checkAnswer('B')"></button>
+            <button class="btn" id="C" onclick="checkAnswer('C')"></button>
+            <button class="btn" id="D" onclick="checkAnswer('D')"></button>
+            <div id="timer"></div>
+          </div>
+        </div>
+    </section>
+
+      <!-- Results section -->
+    <section id="scoreSection" class="hide">
+        <div class="container">
+           <h2 id="result">Score</h2>
+           <h3 id="resultMessage">Result message</h3>
+        </div>
+    </section> 
     <script src="assets/js/script.js"></script>
 </body>
 </html>
