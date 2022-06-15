@@ -15,7 +15,7 @@ html {
     padding-left: 20%;
     display: block;
   }
-  
+
   /* Game area */
   .container {
     position: relative;
@@ -104,3 +104,26 @@ html {
   .hide {
     display: none;
   }
+
+    /* Media queries */
+    @media (max-width: 501px) {
+        .btn {
+          font-size: 28px;
+          width: 250px;
+          height: auto;
+        }
+      }
+    
+      @media (max-width: 400px) {
+        .btn {
+          font-size: 26px;
+          width: 200px;
+        }
+      }
+    
+      @media (max-width: 312px) {
+        .btn {
+          font-size: 24px;
+          width: 170px;
+        }
+      }
