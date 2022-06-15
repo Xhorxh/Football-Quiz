@@ -174,6 +174,8 @@ function answerIsCorrect() {
 
 function answerIsWrong() {
 
+    score = score + 0;
+    secondsLeft = secondsLeft - 10;
 }
 
 function gameOver() {
