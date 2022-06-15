@@ -180,4 +180,9 @@ function answerIsWrong() {
 
 function gameOver() {
 
+    header.classList.remove("hide");
+    scoreSection.classList.remove("hide");
+    quizContainer.classList.add("hide");
+    result.textContent = `You scored: ${score}/110`;
+    button.disabled = true;
 }
