@@ -116,7 +116,13 @@ var secondsLeft = 90;
 
 start.addEventListener("click", startQuiz);
 
-function startQuiz() {}
+function startQuiz() {
+
+    quizContainer.classList.remove("hide");
+    welcome.classList.add("hide");
+    displayQuestion();
+    startTimer();
+}
 
 function displayQuestion() {
 
