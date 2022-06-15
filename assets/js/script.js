@@ -113,6 +113,13 @@ function startQuiz() {
 
 function displayQuestion() {
 
+    let q = questions[runningQuestion];
+
+    question.innerText = q.question;
+    optionA.innerText = q.optionA;
+    optionB.innerText = q.optionB;
+    optionC.innerText = q.optionC;
+    optionD.innerText = q.optionD;
 }
 
 function checkAnswer() {
