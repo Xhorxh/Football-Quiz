@@ -89,6 +89,22 @@ let questions = [{
   }
 ];
 
+// select all elements
+let header = document.getElementById("header");
+let welcome = document.getElementById("welcome")
+let start = document.getElementById("startQuiz");
+let question = document.getElementById("question");
+let quizContainer = document.getElementById("quizContainer");
+let optionA = document.getElementById("A");
+let optionB = document.getElementById("B");
+let optionC = document.getElementById("C");
+let optionD = document.getElementById("D");
+let button = document.getElementsByClassName("btn");
+let scoreSection = document.getElementById("scoreSection");
+let resultMessage = document.getElementById("resultMessage");
+let timer = document.getElementById("timer");
+let result = document.getElementById("result");
+
 function startQuiz() {
 
 }
