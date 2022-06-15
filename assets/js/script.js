@@ -185,4 +185,11 @@ function gameOver() {
     quizContainer.classList.add("hide");
     result.textContent = `You scored: ${score}/110`;
     button.disabled = true;
+    if (score <= 50) {
+        resultMessage.innerHTML = ``;
+      } else if (score > 50 && score <= 90) {
+        resultMessage.innerHTML = ``;
+      } else if (score > 90 && score <= 110) {
+        resultMessage.innerHTML = ``
+}
 }
