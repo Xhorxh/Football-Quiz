@@ -5,7 +5,7 @@ It is designed to be responsive and accessible on a range of devices, making it 
 
 [View the live project here.](https://xhorxh.github.io/Football-Quiz/)
 
-![Responsive Mockup](assets/images/responsive.webp)
+![Responsive Mockup](assets/images/responsive.jpg)
 
 
 ## Features
@@ -18,7 +18,7 @@ The features in this game are the countdown time limit of 90 seconds for 11 ques
 
   - This section shows the users the rules of the quiz game and a "Kick-Off" button to allow them to start the quiz.
   - It is fully responsive and has the same layout as the play area, as well as the result section.
-![Start section](assets/images/welcomeSection.webp)
+![Start section](assets/images/welcomeSection.jpg)
 
 - __The background image__
   - The background image includes a photograph of the biggest stadium in Europe to give the users the feeling of a real football game.
@@ -28,13 +28,13 @@ The features in this game are the countdown time limit of 90 seconds for 11 ques
 
   - The questions will be displayed in this quiz box with four options and at the bottom of this box starts automatically the countdown timer.
   - Like other sections on this website, the layout is almost the same and the option buttons have a hover effect and a pointer cursor.
-![Plaz area](assets/images/playArea.webp)
+![Play area](assets/images/playArea.jpg)
 
 - __Result section__
 
   - This section will be displayed immediately after the countdown timer is over or all the questions have been answered.
   - Here will be shown the final result and depending on this result also different quotes, and a home button to start over the quiz.
-![Result section](assets/images/resultSection.webp)
+![Result section](assets/images/resultSection.jpg)
 
 ### Features Left to Implement
 - I would like to randomize the questions and the answers as well.
@@ -60,7 +60,7 @@ The features in this game are the countdown time limit of 90 seconds for 11 ques
 - JavaScript:
   - No errors were returned  when validating in [(JSHint) validator](https://jshint.com/)
   ![JSHint](assets/images/JSHint.jpg)
--LightHouse:
+
   -  Lighthouse chechk results:
 ![Lighthouse](assets/images/lighthouse.jpg)
 ## Deployment
