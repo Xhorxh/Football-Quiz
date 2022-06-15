@@ -105,6 +105,8 @@ let resultMessage = document.getElementById("resultMessage");
 let timer = document.getElementById("timer");
 let result = document.getElementById("result");
 
+start.addEventListener("click", startQuiz);
+
 function startQuiz() {
 
 }
