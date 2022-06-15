@@ -153,6 +153,18 @@ function checkAnswer(answer) {
 
 function startTimer() {
 
+    if (holdInterval === 0) {
+        holdInterval = setInterval(function() {
+          secondsLeft--;
+          timer.textContent = `Time left: ${secondsLeft} seconds`;
+
+          if (secondsLeft <= 0) {
+            clearInterval(holdInterval);
+            gameOver();
+            timer.textContent = "OOOPS! TIME'S UP!";
+          }
+        }, 1000);
+      }
 }
 
 function answerIsCorrect() {
