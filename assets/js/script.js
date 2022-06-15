@@ -135,8 +135,20 @@ function displayQuestion() {
     optionD.innerText = q.optionD;
 }
 
-function checkAnswer() {
+function checkAnswer(answer) {
 
+    if (answer == questions[runningQuestion].correct) {
+        answerIsCorrect();
+      } else {
+        answerIsWrong();
+      }
+      count = 0;
+      if (runningQuestion < lastQuestion) {
+        runningQuestion++;
+        displayQuestion();
+      } else {
+        gameOver();
+      }
 }
 
 function startTimer() {
