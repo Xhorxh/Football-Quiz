@@ -105,11 +105,18 @@ let resultMessage = document.getElementById("resultMessage");
 let timer = document.getElementById("timer");
 let result = document.getElementById("result");
 
+// create some variables
+let lastQuestion = questions.length - 1;
+let runningQuestion = 0;
+let count = 0;
+let score = 0;
+// interval time
+var holdInterval = 0;
+var secondsLeft = 90;
+
 start.addEventListener("click", startQuiz);
 
-function startQuiz() {
-
-}
+function startQuiz() {}
 
 function displayQuestion() {
 
