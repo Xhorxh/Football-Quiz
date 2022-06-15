@@ -54,11 +54,12 @@ The features in this game are the countdown time limit of 90 seconds for 11 ques
 ### Validator Testing
 
 - HTML:
-  - No errors were returned when passing through the official [W3C validator]()
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fxhorxh.github.io%2FFootball-Quiz%2F)
 - CSS:
-  - No errors were found when passing through the official [(Jigsaw) validator]()
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fxhorxh.github.io%2FFootball-Quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JavaScript:
-  - No errors were returned  when validating in [(JSHint) validator]()
+  - No errors were returned  when validating in [(JSHint) validator](https://jshint.com/)
+  ![JSHint](assets/images/JSHint.jpg)
 -LightHouse:
   -  Lighthouse chechk results:
 ![Lighthouse](assets/images/lighthouse.jpg)
