@@ -106,7 +106,7 @@ html {
   }
 
     /* Media queries */
-    @media (max-width: 501px) {
+    @media (max-width: 481px) {
         .btn {
           font-size: 28px;
           width: 250px;
