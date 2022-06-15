@@ -169,6 +169,7 @@ function startTimer() {
 
 function answerIsCorrect() {
 
+    score = score + 10;
 }
 
 function answerIsWrong() {
