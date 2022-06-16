@@ -17,49 +17,50 @@
     <!-- Home button -->
     <div id="header" class="hide">
         <div>
-         <a class="home-btn" href="index.html">Home</a>
+            <a class="home-btn" href="index.html">Home</a>
         </div>
     </div>
 
     <!-- Quiz Info -->
     <section id="welcome">
         <div class="container">
-          <div>
-            <h1>How much do you know about Football?</h1>
-          </div>
-          <div>
-            <p>You have 90 seconds to the finale whistle.....</p>
-            <p>Incorrect answers have a 10 second penalty!</p>
-            <p>There is a total of 11 questions</p>
-            <p>Will you get the high score?</p>
-          </div>
-          <button id="startQuiz" type="button" class="start-btn">KICK OFF!</button>
+            <div>
+                <h1>How much do you know about Football?</h1>
+            </div>
+            <div>
+                <p>You have 90 seconds to the finale whistle.....</p>
+                <p>Incorrect answers have a 10 second penalty!</p>
+                <p>There is a total of 11 questions</p>
+                <p>Will you get the high score?</p>
+            </div>
+            <button id="startQuiz" type="button" class="start-btn">KICK OFF!</button>
         </div>
     </section>
 
     <!-- Play area -->
     <section id="quizContainer" class="hide">
         <div class="container">
-          <div>
-            <h1 id="question">Quiz questions</h1>
-          </div>
-          <div id="options">
-            <button class="btn" id="A" onclick="checkAnswer('A')"></button>
-            <button class="btn" id="B" onclick="checkAnswer('B')"></button>
-            <button class="btn" id="C" onclick="checkAnswer('C')"></button>
-            <button class="btn" id="D" onclick="checkAnswer('D')"></button>
+            <div>
+                <h1 id="question">Quiz questions</h1>
+            </div>
+            <div id="options">
+                <button class="btn" id="A" onclick="checkAnswer('A')"></button>
+                <button class="btn" id="B" onclick="checkAnswer('B')"></button>
+                <button class="btn" id="C" onclick="checkAnswer('C')"></button>
+                <button class="btn" id="D" onclick="checkAnswer('D')"></button>
             <div id="timer"></div>
-          </div>
+            </div>
         </div>
     </section>
 
       <!-- Results section -->
     <section id="scoreSection" class="hide">
         <div class="container">
-           <h2 id="result">Score</h2>
-           <h3 id="resultMessage">Result message</h3>
+            <h2 id="result">Score</h2>
+            <h3 id="resultMessage">Result message</h3>
         </div>
-    </section> 
+    </section>
+     
     <script src="assets/js/script.js"></script>
 </body>
 </html>

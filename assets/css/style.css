@@ -72,12 +72,6 @@ html {
     transition: transform 150ms;
   }
 
-  #timer {
-    background-color: rgb(128, 0, 0);
-    color: white;
-    border-radius: 5px;
-  }
-
   .home-btn {
     background-color: cornflowerblue;
     border: solid 2px rgb(253, 254, 255);
@@ -100,30 +94,36 @@ html {
     border-radius: 5px;
     clear: both;
   }
+/* Timer div */
+  #timer {
+    background-color: rgb(128, 0, 0);
+    color: white;
+    border-radius: 5px;
+  }
 
   .hide {
     display: none;
   }
 
-    /* Media queries */
-    @media (max-width: 481px) {
-        .btn {
-          font-size: 28px;
-          width: 250px;
-          height: auto;
-        }
+/* Media queries */
+@media (max-width: 481px) {
+    .btn {
+        font-size: 28px;
+        width: 250px;
+        height: auto;
       }
+}
     
-      @media (max-width: 400px) {
-        .btn {
-          font-size: 26px;
-          width: 200px;
-        }
+@media (max-width: 400px) {
+    .btn {
+        font-size: 26px;
+        width: 200px;
       }
+}
     
-      @media (max-width: 312px) {
-        .btn {
-          font-size: 24px;
-          width: 170px;
-        }
+@media (max-width: 312px) {
+    .btn {
+        font-size: 24px;
+        width: 170px;
       }
+}
