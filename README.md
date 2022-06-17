@@ -50,6 +50,10 @@ The features in this game are the countdown time limit of 90 seconds for 11 ques
   * ### _Font:_
     * I would like to keep it simple here with just an Open Serif font from [Google Fonts](https://fonts.google.com/specimen/Open+Sans?query=open).
 
+## Testing 
+-   I found some warnings in JSHint report such as "'let' is available in ES6" (use 'esversion: 6'), and "One unused variable", which is not. After reading the documentation, I added in js script as a comment "exported", which is a directive for telling JSHint about global variables that are defined in the current file but used elsewhere.
+- Also for the let statement, I added in js script as a comment "jshint esversion: 6 ". And now in my JSHint report are no warnings.
+- I have been working all the time with my desktop text editor (Atom) to avoid non-sense commits in Gitpod. That's why I've done all the commits mostly in one day (after the project was finished). I am not really sure if this is a good practice, and if not I'll make sure to use only VS editor in Gitpod for the next projects from start to finish.
 
 ### Validator Testing
 
@@ -63,7 +67,16 @@ The features in this game are the countdown time limit of 90 seconds for 11 ques
 
   -  Lighthouse chechk results:
 ![Lighthouse](assets/images/lighthouse.jpg)
+
+
+### Further Testing
+
+-   The Website was tested on Google Chrome, Microsoft Edge, Mozilla Firefox, and Safari browsers.
+-   I tested my website all the time while I was writing it(using developer tools in Chrome to check for errors and how the elements are displayed). I managed to put everything where I wanted to. The website is fully  responsive after lots of tests in [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fxhorxh.github.io%2FFootball-Quiz%2F), developer tools, and other websites.
+-   Friends and family members were asked to review the site to point out any bugs and/or user experience issues.
+
 ## Deployment
+
 ### GitHub Pages
 
 The project was deployed to GitHub Pages using the following steps...
@@ -74,13 +87,46 @@ The project was deployed to GitHub Pages using the following steps...
 5. The page will automatically refresh.
 6. Scroll back down through the page to locate the now published site [link](https://xhorxh.github.io/Football-Quiz/) in the "GitHub Pages" section.
 
+### Forking the GitHub Repository
 
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Xhorxh/Football-Quiz)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Xhorxh/Football-Quiz)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+ $ git clone https://github.com/Xhorxh/Football-Quiz
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/Xhorxh/Football-Quiz
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1).
+> Unpacking objects: 100% (10/10), done.
+```
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 ## Credits
 
 ### Content
 
--   The questions are written from information in [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
--   The last joke is from [Bleacherreport](https://bleacherreport.com/).         
+-   The questions are written from information in [Wikipedia](https://en.wikipedia.org/wiki/Main_Page), and some ideas are from [Goal](https://www.goal.com/).
+-   The last joke is from [Bleacherreport](https://bleacherreport.com/).   
+-   I have followed many tutorials to understand better how to create this quiz game and the check answer function is from [Code Explained](https://www.codeexplained.dev/2018/10/create-multiple-choice-quiz-using-javascript.html).      
 
 
 
