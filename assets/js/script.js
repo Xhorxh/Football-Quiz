@@ -1,4 +1,4 @@
-// Quiz questions
+// Quiz questions:
 let questions = [{
     "question": "In which World Cup did Diego Maradona score his infamous 'Hand of God' goal?",
     "optionA": "Spain 1982",
@@ -105,19 +105,23 @@ let resultMessage = document.getElementById("resultMessage");
 let timer = document.getElementById("timer");
 let result = document.getElementById("result");
 
-// create some variables
+// create some variables:
 let lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
 let score = 0;
-// interval time
+
+// interval time:
 var holdInterval = 0;
 var secondsLeft = 90;
 
-
+// Add event listener to start quiz:
 start.addEventListener("click", startQuiz);
 
-
+/**
+ * Show the play area and 
+ * start the countdown:
+ */
 function startQuiz() {
 
     quizContainer.classList.remove("hide");
@@ -126,6 +130,7 @@ function startQuiz() {
     startTimer();
 }
 
+// Display questions in screen:
 function displayQuestion() {
 
     let q = questions[runningQuestion];
@@ -136,7 +141,10 @@ function displayQuestion() {
     optionC.innerText = q.optionC;
     optionD.innerText = q.optionD;
 }
-
+/** 
+ * Check if answer is correct and
+ * display dhe next question:
+ */
 function checkAnswer(answer) {
 
     if (answer == questions[runningQuestion].correct) {
@@ -152,7 +160,7 @@ function checkAnswer(answer) {
         gameOver();
     }
 }
-
+// Start the countdown and display seconds left in screen:
 function startTimer() {
 
     if (holdInterval === 0) {
@@ -168,18 +176,22 @@ function startTimer() {
         }, 1000);
     }
 }
-
+// Increment score for correct answers:
 function answerIsCorrect() {
 
     score = score + 10;
 }
-
+//Deduction of seconds for wrong answers:
 function answerIsWrong() {
 
     score = score + 0;
     secondsLeft = secondsLeft - 10;
 }
-
+/**
+ * Display result section with
+ * total scores archived and 
+ * different messages based on scores amount:
+ */
 function gameOver() {
 
     header.classList.remove("hide");
