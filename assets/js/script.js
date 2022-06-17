@@ -1,3 +1,5 @@
+/* exported checkAnswer */
+/* jshint esversion: 6 */
 // Quiz questions:
 let questions = [{
     "question": "In which World Cup did Diego Maradona score his infamous 'Hand of God' goal?",
